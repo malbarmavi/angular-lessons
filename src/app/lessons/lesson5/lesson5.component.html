@@ -1,0 +1,25 @@
+<p>
+  lesson 5 :
+</p>
+
+
+<div>
+  <input type="text" #txt [value]="userName" (keyup)="userName=txt.value ">
+</div>
+
+<div>
+  <input type="text" #txt2 [value]="lastName" (keyup)="updateLastName(txt2.value)">
+</div>
+
+
+<div>
+  name : {{userName}}
+
+</div>
+
+<div>
+  lastName : {{lastName}}
+
+</div>
+
+<button (click)="userName = 'sdssdjfsdfjk'">update</button>

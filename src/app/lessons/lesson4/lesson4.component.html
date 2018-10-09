@@ -1,0 +1,21 @@
+<p>
+  lesson 4 :
+</p>
+
+<h3>Template Reference Variables</h3>
+
+<audio controls #ap>
+  <source src="./assets/waterfall.wav" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+
+<div>
+  <button (click)="ap.play()">Play |></button> /<button (click)="ap.pause()">Pause ||</button>
+</div>
+
+
+<div>
+  <!-- try key up to get current value  -->
+  <input type="text" id="txt-box" #txt (keypress)="log(txt.value)">
+  <button (click)="log(txt)"> Log input elemnt</button>
+</div>

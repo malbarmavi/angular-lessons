@@ -1,0 +1,20 @@
+<p>
+  lesson 11 :
+</p>
+<p>
+  Use ngStyle to apply color value
+</p>
+
+<div>
+  <label for="color">Color</label>
+  <input type="text" [(ngModel)]="color" (keyup.enter)="addColor()">
+  <button (click)="addColor()">Add Color</button>
+</div>
+<div>
+  <ol>
+    <li *ngFor="let color of colorList;let idx = index" [ngStyle]="{color:color}">
+      {{color}}
+      <button (click)="removeColor(idx)"><i class="fas fa-trash"></i></button>
+    </li>
+  </ol>
+</div>

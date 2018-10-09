@@ -1,0 +1,21 @@
+<p>
+  lesson 10 :
+</p>
+
+Add color item by press enter key with <b>keyup.enter</b> as shorthand syntac for check the event and run a method as
+in lesson
+9 and more cleaner
+
+<div>
+  <label for="color">Color</label>
+  <input type="text" [(ngModel)]="color" (keyup.enter)="addColor()">
+  <button (click)="addColor()">Add Color</button>
+</div>
+<div>
+  <ol>
+    <li *ngFor="let color of colorList;let idx = index">
+      {{color}}
+      <button (click)="removeColor(idx)"><i class="fas fa-trash"></i></button>
+    </li>
+  </ol>
+</div>

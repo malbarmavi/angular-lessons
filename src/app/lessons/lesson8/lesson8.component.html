@@ -1,0 +1,19 @@
+<p>
+  lesson 8 :
+</p>
+
+Workin with array object add,remove items
+
+<div>
+  <label for="color">Color</label>
+  <input type="text" [(ngModel)]="color">
+  <button (click)="addColor()">Add Color</button>
+</div>
+<div>
+  <ol>
+    <li *ngFor="let color of colorList;let idx = index">
+      {{color}}
+      <button (click)="removeColor(idx)"><i class="fas fa-trash"></i></button>
+    </li>
+  </ol>
+</div>

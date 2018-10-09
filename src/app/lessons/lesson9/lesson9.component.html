@@ -1,0 +1,19 @@
+<p>
+  lesson 9 :
+</p>
+
+Add color item by press enter key
+
+<div>
+  <label for="color">Color</label>
+  <input type="text" [(ngModel)]="color" (keyup)="onPressEnter($event)">
+  <button (click)="addColor()">Add Color</button>
+</div>
+<div>
+  <ol>
+    <li *ngFor="let color of colorList;let idx = index">
+      {{color}}
+      <button (click)="removeColor(idx)"><i class="fas fa-trash"></i></button>
+    </li>
+  </ol>
+</div>

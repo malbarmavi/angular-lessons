@@ -1,0 +1,12 @@
+<p>
+  lesson 7 :
+</p>
+
+Display Array Data with <b>*ngFor</b>
+<button (click)="colorList.push('white')">Add white color</button>
+
+<div>
+  <ol>
+    <li *ngFor="let color of colorList"> {{color}} </li>
+  </ol>
+</div>

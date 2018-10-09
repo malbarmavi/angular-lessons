@@ -9,3 +9,55 @@ body {
   margin: 0;
   padding: 0;
 }
+
+mat-sidenav {
+  width: 300px;
+  box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24);
+}
+
+mat-sidenav-container {
+  height: 100vh;
+}
+
+.container {
+  padding: 1.5rem;
+}
+
+mat-nav-list {
+  padding-top: 0 !important ;
+  a {
+    border-bottom: 1px solid #f3f3f3;
+    &.active-lesson {
+      background: rgba(#ff4081, 0.6) !important;
+      color: white;
+    }
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+.router-holder {
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+code {
+  display: block;
+}
+
+.title {
+  margin-left: 0.25rem;
+}
+
+* {
+  font-family: "roboto";
+}
+
+.router-holder {
+  div {
+    margin-top: 0.5rem;
+  }
+}

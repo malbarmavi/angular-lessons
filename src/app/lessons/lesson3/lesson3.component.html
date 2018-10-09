@@ -1,0 +1,36 @@
+<p>
+  lesson 3 :
+</p>
+
+
+<div>Events</div>
+
+<button (click)="log()">Run method</button>
+<button (click)="log($event)">Log event</button>
+
+<div>
+  <label class="mouse-box" (mouseenter)="onEnter()" (mouseover)="onHover()" (mouseleave)="onLeave()">Enter mouse here</label>
+  {{mouseState}}
+</div>
+
+<div>
+  <Label>by methods : Counter ... </Label> <b>{{count}}</b> <button (click)="inc()">Increment +</button> <button
+    (click)="reset()">Reset
+    => 0</button>
+</div>
+
+<!-- <div>
+  count++ , count+=1  , console , Math ...
+    <Label>Counter ... </Label> <b>{{count}}</b> <button (click)="count++">Increment +</button> <button (click)="reset()">Reset
+      => 0</button>
+  </div> -->
+
+<div>
+  <Label>by expression : Counter ... </Label> <b>{{count}}</b> <button (click)="count = count +1">Increment +</button>
+  <button (click)="count = 0">Reset
+    => 0</button>
+</div>
+
+
+<div><input type="text" (keyup)="log($event.target.value)"></div>
+<button (click)="log();log($event);log();inc();">Run All</button>
