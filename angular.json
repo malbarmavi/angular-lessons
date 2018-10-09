@@ -42,7 +42,8 @@
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": true
+              "buildOptimizer": true,
+              "baseHref": "https://malbarmawi.github.io/angular-lessons/"
             }
           }
         },
