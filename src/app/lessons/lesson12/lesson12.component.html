@@ -1,3 +1,17 @@
 <p>
   lesson 12 :
 </p>
+
+<div>
+  state value : {{state}}
+</div>
+
+<div>
+  <button (click)="state = !state">toggle the state</button>
+</div>
+
+<div *ngIf="state">
+  <h1>
+    Welcome from *ngIf
+  </h1>
+</div>
