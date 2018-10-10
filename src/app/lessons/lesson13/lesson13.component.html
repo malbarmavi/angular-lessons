@@ -1,0 +1,23 @@
+<p>
+  lesson 13 :
+</p>
+
+<div>
+  state value : {{state}}
+</div>
+
+<div>
+  <button (click)="state = !state">toggle the state</button>
+</div>
+
+<div *ngIf="state;else elseCase">
+  <h1>
+    Welcome from *ngIf
+  </h1>
+</div>
+
+<ng-template #elseCase>
+  <h1>
+    Welcome from *ngIf else
+  </h1>
+</ng-template>

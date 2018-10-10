@@ -16,6 +16,7 @@ import { Lesson11Component } from "./lesson11/lesson11.component";
 import { LessonRouteModule } from "./lessons.routing";
 import { InstallComponent } from './install/install.component';
 import { Lesson12Component } from './lesson12/lesson12.component';
+import { Lesson13Component } from './lesson13/lesson13.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule, LessonRouteModule],
@@ -33,7 +34,8 @@ import { Lesson12Component } from './lesson12/lesson12.component';
     Lesson10Component,
     Lesson11Component,
     InstallComponent,
-    Lesson12Component
+    Lesson12Component,
+    Lesson13Component
   ],
   exports: [
     Lesson1Component,
@@ -49,7 +51,8 @@ import { Lesson12Component } from './lesson12/lesson12.component';
     Lesson10Component,
     Lesson11Component,
     InstallComponent,
-    Lesson12Component
+    Lesson12Component,
+    Lesson13Component
   ]
 })
 export class LessonsModule {}
