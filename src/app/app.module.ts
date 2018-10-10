@@ -14,9 +14,9 @@ import { RouterModule } from "@angular/router";
     BrowserAnimationsModule,
     MaterialModule,
     LessonsModule,
-    RouterModule
+    RouterModule.forRoot([], { useHash: true })
   ],
-  providers: [],
+
   bootstrap: [AppComponent]
 })
 export class AppModule {}
