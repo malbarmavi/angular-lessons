@@ -15,6 +15,7 @@ import { Lesson11Component } from "./lesson11/lesson11.component";
 import { InstallComponent } from "./install/install.component";
 import { Lesson12Component } from "./lesson12/lesson12.component";
 import { Lesson13Component } from "./lesson13/lesson13.component";
+import { Lesson14Component } from "./lesson14/lesson14.component";
 
 export const routes: Route[] = [
   {
@@ -91,6 +92,11 @@ export const routes: Route[] = [
     path: "lesson/13",
     component: Lesson13Component,
     data: { title: "Lesson 13" }
+  },
+  {
+    path: "lesson/14",
+    component: Lesson14Component,
+    data: { title: "Lesson 14" }
   },
   { path: "", redirectTo: "install", pathMatch: "full" }
 ];

@@ -1,0 +1,38 @@
+<p>
+  lesson 14 :
+</p>
+
+<p>ngSwitch example</p>
+
+<div>
+  <label>Skill</label>
+  <div class="skills">
+
+    <label><span>javascript</span><input type="radio" name="skill" [(ngModel)]="skill" value="javascript" /></label>
+    <label><span>angular</span><input type="radio" name="skill" [(ngModel)]="skill" value="angular" /></label>
+    <label><span>typescript</span><input type="radio" name="skill" [(ngModel)]="skill" value="typescript" /></label>
+    <label><span>rxjs</span><input type="radio" name="skill" [(ngModel)]="skill" value="rxjs" /></label>
+  </div>
+
+</div>
+
+<div [ngSwitch]="skill">
+  <div *ngSwitchCase="'javascript'">
+    <h3>JavaScript is a wonderful language. </h3>
+  </div>
+  <div *ngSwitchCase="'angualr'">
+    <h3>Angular is great. </h3>
+  </div>
+  <div *ngSwitchCase="'typescript'">
+    <h3>TypeScript is my favorite.</h3>
+  </div>
+  <div *ngSwitchCase="'rxjs'">
+    <h3>rxjs..</h3>
+  </div>
+  <div *ngSwitchDefault>
+    <h3>You can select on skill only.</h3>
+  </div>
+
+
+
+</div>
