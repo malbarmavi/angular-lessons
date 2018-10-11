@@ -1,0 +1,11 @@
+<p>
+  Resources
+</p>
+
+<h3> List of Angular Learning Resources</h3>
+<div>
+  <ul>
+    <li *ngFor="let resource of resourceList"><a [href]="resource.url" target="_blank">{{resource.title}} -
+        {{resource.type}}</a></li>
+  </ul>
+</div>
