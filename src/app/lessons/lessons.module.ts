@@ -14,14 +14,15 @@ import { Lesson9Component } from "./lesson9/lesson9.component";
 import { Lesson10Component } from "./lesson10/lesson10.component";
 import { Lesson11Component } from "./lesson11/lesson11.component";
 import { LessonRouteModule } from "./lessons.routing";
-import { InstallComponent } from './install/install.component';
-import { Lesson12Component } from './lesson12/lesson12.component';
-import { Lesson13Component } from './lesson13/lesson13.component';
-import { Lesson14Component } from './lesson14/lesson14.component';
-import { ResourceComponent } from './resource/resource.component';
+import { InstallComponent } from "./install/install.component";
+import { Lesson12Component } from "./lesson12/lesson12.component";
+import { Lesson13Component } from "./lesson13/lesson13.component";
+import { Lesson14Component } from "./lesson14/lesson14.component";
+import { ResourceComponent } from "./resource/resource.component";
+import { MaterialModule } from "../modules/material.module";
 
 @NgModule({
-  imports: [CommonModule, FormsModule, LessonRouteModule],
+  imports: [CommonModule, FormsModule, LessonRouteModule, MaterialModule],
   declarations: [
     Lesson1Component,
     Lesson2Component,
