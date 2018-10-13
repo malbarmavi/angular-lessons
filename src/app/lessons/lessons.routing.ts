@@ -19,6 +19,7 @@ import { Lesson14Component } from "./lesson14/lesson14.component";
 import { ResourceComponent } from "./resource/resource.component";
 import { Lesson15Component } from "./lesson15/lesson15.component";
 import { Lesson16Component } from "./lesson16/lesson16.component";
+import { Lesson17Component } from "./lesson17/lesson17.component";
 
 export const routes: Route[] = [
   {
@@ -110,6 +111,11 @@ export const routes: Route[] = [
     path: "lesson/16",
     component: Lesson16Component,
     data: { title: "Lesson 16" }
+  },
+  {
+    path: "lesson/17",
+    component: Lesson17Component,
+    data: { title: "Lesson 17" }
   },
   {
     path: "Resources",
