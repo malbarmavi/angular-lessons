@@ -1,0 +1,32 @@
+<p>
+  lesson 15 :
+</p>
+
+<p>
+  <b>ngStyle</b> use to update element style like color,background-color,font-size ....
+</p>
+
+
+<div>
+  <label>Font Size</label>
+  <button (click)="fontSize=fontSize+1">A+</button> <button (click)="fontSize=fontSize-1">A-</button>
+</div>
+
+
+<div>
+  <label>Background Color</label>
+  <select [(ngModel)]="bgColor">
+    <option *ngFor="let color of colors" [value]="color">{{color}}</option>
+  </select>
+</div>
+
+<div>
+  <label>Color</label>
+  <select [(ngModel)]="color">
+    <option *ngFor="let color of colors" [value]="color">{{color}}</option>
+  </select>
+</div>
+
+<div class="display-box" [ngStyle]="{'font-size.px':fontSize,'background-color':bgColor,color:color}">
+  Introduction to Angular
+</div>

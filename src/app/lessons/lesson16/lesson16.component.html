@@ -1,0 +1,30 @@
+<p>
+  lesson 16 :
+</p>
+
+<p>
+  clean up of example 15 (ngStyle)
+</p>
+
+<div>
+  <label>Font Size</label>
+  <button (click)="style.fontSize=style.fontSize+1">A+</button> <button (click)="style.fontSize=style.fontSize-1">A-</button>
+</div>
+
+<div>
+  <label>Background Color</label>
+  <select [(ngModel)]="style.bgColor">
+    <option *ngFor="let color of style.colors" [value]="color">{{color}}</option>
+  </select>
+</div>
+
+<div>
+  <label>Color</label>
+  <select [(ngModel)]="style.color">
+    <option *ngFor="let color of style.colors" [value]="color">{{color}}</option>
+  </select>
+</div>
+
+<div class="display-box" [ngStyle]="{'font-size.px':style.fontSize,'background-color':style.bgColor,color:style.color}">
+  Introduction to Angular
+</div>

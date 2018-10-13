@@ -20,6 +20,8 @@ import { Lesson13Component } from "./lesson13/lesson13.component";
 import { Lesson14Component } from "./lesson14/lesson14.component";
 import { ResourceComponent } from "./resource/resource.component";
 import { MaterialModule } from "../modules/material.module";
+import { Lesson15Component } from './lesson15/lesson15.component';
+import { Lesson16Component } from './lesson16/lesson16.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule, LessonRouteModule, MaterialModule],
@@ -40,7 +42,9 @@ import { MaterialModule } from "../modules/material.module";
     Lesson12Component,
     Lesson13Component,
     Lesson14Component,
-    ResourceComponent
+    ResourceComponent,
+    Lesson15Component,
+    Lesson16Component
   ],
   exports: [
     Lesson1Component,
