@@ -13,7 +13,7 @@ export class Lesson4Component implements OnInit {
   }
 
   log(data): void {
-    console.log(data)
+    console.log(data);
   }
 
 }

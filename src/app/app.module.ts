@@ -1,11 +1,11 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppComponent } from "./app.component";
-import { MaterialModule } from "./modules/material.module";
-import { LessonsModule } from "./lessons/lessons.module";
-import { RouterModule } from "@angular/router";
+import { AppComponent } from './app.component';
+import { MaterialModule } from './modules/material.module';
+import { LessonsModule } from './lessons/lessons.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [AppComponent],

@@ -1,30 +1,30 @@
-import { Component } from "@angular/core";
-import { lessonRoutesList } from "./lessons/lessons.module";
-import { Router, NavigationEnd, RouterEvent, Routes } from "@angular/router";
-import { filter, first } from "rxjs/operators";
+import { Component } from '@angular/core';
+import { lessonRoutesList } from './lessons/lessons.module';
+import { Router, NavigationEnd, RouterEvent, Routes } from '@angular/router';
+import { filter, first } from 'rxjs/operators';
 
 @Component({
-  selector: "app-root",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.scss"]
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = "Angular Training";
+  title = 'Angular Training';
 
-  public index: number = 0;
+  public index = 0;
 
   public lessonsList: { path: string; title: string }[] = [];
 
   constructor(private _router: Router) {
     // set routes list by routes list so the list will update dynamic everytime new route added
-    let routes = lessonRoutesList;
+    const routes = lessonRoutesList;
     this.lessonsList = routes
-      .filter(r => r.path !== "")
+      .filter(r => r.path !== '')
       .map(r => ({ path: r.path, title: r.data.title }));
   }
 
   ngOnInit() {
-    //get the route index when page reload
+    // get the route index when page reload
     this._router.events
       .pipe(
         filter(e => e instanceof NavigationEnd),

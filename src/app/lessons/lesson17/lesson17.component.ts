@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Lesson17Component implements OnInit {
 
-  public state:boolean = false;
-  
+  public state = false;
+
   constructor() { }
 
   ngOnInit() {

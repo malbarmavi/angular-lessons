@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Lesson14Component implements OnInit {
 
-  public skill:string ='';
-  
+  public skill = '';
+
   constructor() { }
 
   ngOnInit() {

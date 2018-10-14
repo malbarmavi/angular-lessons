@@ -4,33 +4,32 @@ import { Component, OnInit } from '@angular/core';
 }
 
 ) export class Lesson3Component implements OnInit {
-  public mouseState: string = "";
-  count: number = 0;
+  public mouseState = '';
+  count = 0;
   constructor() { }
   ngOnInit() { }
 
   onEnter() {
     console.log('Enter');
-    this.mouseState = "Enter -_-";
+    this.mouseState = 'Enter -_-';
   }
 
 
   onHover() {
     console.log('Hover');
-    this.mouseState = "Hover :)";
+    this.mouseState = 'Hover :)';
   }
 
   onLeave() {
     console.log('Leave');
-    this.mouseState = "Leave :\\";
+    this.mouseState = 'Leave :\\';
   }
 
   log(e?: MouseEvent) {
     if (!e) {
       console.log('%c Hi from console! ', 'background: #4285f4; color: #fff;border:5px dashed #ea4335;font-size:5rem');
-    }
-    else {
-      console.log(e)
+    } else {
+      console.log(e);
     }
   }
 

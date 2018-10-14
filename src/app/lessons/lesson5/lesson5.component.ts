@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Lesson5Component implements OnInit {
 
-  userName: string = "user";
-  lastName: string = "last";
+  userName = 'user';
+  lastName = 'last';
 
   constructor() { }
 

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Lesson2Component implements OnInit {
 
-  public name: string = "Welcome from Lesson 2"
+  public name = 'Welcome from Lesson 2';
   constructor() { }
 
   ngOnInit() {
@@ -15,7 +15,7 @@ export class Lesson2Component implements OnInit {
 
 
   public updateName(): void {
-    this.name = "Next Lesson !!!!!";
+    this.name = 'Next Lesson !!!!!';
   }
 
 
