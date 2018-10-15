@@ -1,0 +1,15 @@
+<p>
+  lesson 18
+</p>
+
+<div>
+  The example about highlight selected item</div>
+<p>ngFor,ngClass,ngIf,click event</p>
+
+<div class="lesson-holder">
+  <div class="lesson" *ngFor="let lesson of lessons" (click)="selectedItem = lesson" [ngClass]="{selected: lesson === selectedItem}">{{lesson.title}}</div>
+</div>
+
+<div *ngIf="selectedItem">
+  Selected item : {{selectedItem?.title}} <button (click)="selectedItem = null">Clear</button>
+</div>

@@ -1,0 +1,24 @@
+.lesson-holder {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .lesson{
+       border: 1px solid rgba(0,0,0,0.25);
+       border-radius: 0.25rem;
+       padding: 1rem;
+       margin-right: 0.25rem;
+       box-shadow: 0 6px 5px -5px rgba(0, 0, 0, 0.2);
+       background: #fff;
+       cursor: pointer;
+       transition: all 0.15s ease-in-out;
+       user-select: none;
+       font-weight: 300;
+       flex-basis: 20%;
+       margin: 0.5rem;
+       color: #0D47A1;
+        &.selected {
+            border: 1px solid rgba(0, 89, 253, 0.473); 
+            box-shadow: 0 8px 12px -4px rgba(11, 96, 227, 0.25), 0 0 8px rgba(11, 96, 227, 0.1) inset;     
+        }
+    }
+}
