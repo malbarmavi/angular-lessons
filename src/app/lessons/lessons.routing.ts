@@ -115,6 +115,11 @@ export const routes: Route[] = [
     data: { title: 'Lesson 16' }
   },
   {
+    path: 'lesson/17',
+    component: Lesson17Component,
+    data: { title: 'Lesson 17' }
+  },
+  {
     path: 'lesson/18',
     component: Lesson18Component,
     data: { title: 'Lesson 18' }
