@@ -22,8 +22,14 @@ import { Lesson16Component } from './lesson16/lesson16.component';
 import { Lesson17Component } from './lesson17/lesson17.component';
 import { Lesson18Component } from './lesson18/lesson18.component';
 import { Lesson19Component } from './lesson19/lesson19.component';
+import { IndexComponent } from './index/index.component';
 
 export const routes: Route[] = [
+  {
+    path: 'index',
+    component: IndexComponent,
+    data: { title: 'Index' }
+  },
   {
     path: 'install',
     component: InstallComponent,
@@ -134,7 +140,7 @@ export const routes: Route[] = [
     component: ResourceComponent,
     data: { title: 'Resources' }
   },
-  { path: '', redirectTo: 'install', pathMatch: 'full' }
+  { path: '', redirectTo: 'index', pathMatch: 'full' }
 ];
 
 @NgModule({
