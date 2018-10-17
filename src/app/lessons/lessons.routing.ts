@@ -25,11 +25,11 @@ import { Lesson19Component } from './lesson19/lesson19.component';
 import { IndexComponent } from './index/index.component';
 
 export const routes: Route[] = [
-  {
-    path: 'index',
-    component: IndexComponent,
-    data: { title: 'Index' }
-  },
+  // {
+  //   path: 'index',
+  //   component: IndexComponent,
+  //   data: { title: 'Index' }
+  // },
   {
     path: 'install',
     component: InstallComponent,
@@ -140,7 +140,7 @@ export const routes: Route[] = [
     component: ResourceComponent,
     data: { title: 'Resources' }
   },
-  { path: '', redirectTo: 'index', pathMatch: 'full' }
+  { path: '', redirectTo: 'install', pathMatch: 'full' }
 ];
 
 @NgModule({

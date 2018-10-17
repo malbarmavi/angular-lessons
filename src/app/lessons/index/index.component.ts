@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { routes } from '../lessons.routing';
 
 @Component({
   selector: 'app-index',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndexComponent implements OnInit {
 
+  public lessons: any[];
   constructor() { }
 
   ngOnInit() {
+    this.lessons = routes.filter(r => r.path != '')
+      .map(r => ({ path: r.path, title: r.data.title }))
   }
 
 }

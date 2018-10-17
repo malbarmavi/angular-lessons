@@ -1,3 +1,11 @@
 <p>
   Index
 </p>
+
+
+<ng-container *ngFor="let lesson of lessons">
+  <mat-card>
+    <a>{{lesson.title}}</a>
+  </mat-card>
+
+</ng-container>
