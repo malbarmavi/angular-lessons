@@ -47,4 +47,8 @@ export class Lesson19Component implements OnInit {
     this.tasks[i] = temp;
   }
 
+  removeItem(i) {
+    this.tasks.splice(i, 1);
+  }
+
 }

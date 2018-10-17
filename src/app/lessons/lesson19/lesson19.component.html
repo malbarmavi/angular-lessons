@@ -5,6 +5,7 @@
 <div>Display task list with control like reorder and state change</div>
 <p>ngFor,ngClass,ngIf,click event</p>
 <div class="states">
+  <span class="archive">Archive</span>
   <span class="progress">Progress</span>
   <span class="done">Done</span>
   <span class="error">Error</span>
@@ -12,6 +13,7 @@
 <div class="tasks-holder">
   <div class="task" *ngFor="let task of tasks;let f = first;let l = last;let i= index" [ngClass]="task.states">
     {{task.title}}
+    <i class="fas fa-trash f-right remove" (click)="removeItem(i)"></i>
     <i class="fas fa-archive f-right" (click)=" task.states ='archive' "></i>
     <i class="fas fa-chevron-up f-right" (click)="up(i) " *ngIf="!f"></i>
     <i class="fas fa-chevron-down f-right" (click)=" down(i) " *ngIf="!l"></i>

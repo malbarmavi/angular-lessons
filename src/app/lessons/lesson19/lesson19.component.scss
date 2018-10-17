@@ -35,22 +35,29 @@
             color:#34A853;
         }
         &.archive{
-            display: none; 
+            border: 1px solid rgb(153, 153, 153); 
+            // box-shadow: 0 8px 12px -4px rgba(11, 96, 227, 0.25), 0 0 8px rgba(11, 96, 227, 0.1) inset;     
+            color: rgb(153, 153, 153);
+            opacity: 0.5;
         }
 
         i{
 
             cursor: pointer;
             margin-left:0.25rem;
-            border:1px solid rgba(0, 0, 0, 0.1);
+            border:1px solid currentColor;
             padding: 0.35rem;
             border-radius: 100%;
-            color:rgba(0, 0, 0, 0.5);
+            color:rgba(0, 0, 0, 0.4);
             transition: all 0.25s ease-in-out;
             opacity: 0.7;
             &:hover {
                 opacity: 1;
-                box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.5);
+                box-shadow: 0 2px 5px -2px currentColor;
+            }
+
+            &.remove{
+                color:#EA4335;
             }
 
         }
@@ -93,6 +100,9 @@
     }   
     .done{
         color:#34A853; 
+    }
+    .archive{
+        color:rgb(153, 153, 153)
     }
     span{
         margin: 0 0.5rem;
