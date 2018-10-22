@@ -14,6 +14,7 @@ cache:
 
 install:
   - npm i @angular/cli@6.2.4 -g
+  - npm i 
 
 script:
   - ng build --prod
