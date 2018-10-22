@@ -8,8 +8,8 @@ import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms'
 })
 export class Lesson22Component implements OnInit {
 
-
   public simpleForm: FormGroup;
+
   constructor(fb: FormBuilder) {
     this.simpleForm = fb.group({
       name: ['', [Validators.required]],

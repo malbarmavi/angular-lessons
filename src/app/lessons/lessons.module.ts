@@ -29,6 +29,7 @@ import { IndexComponent } from './index/index.component';
 import { Lesson20Component } from './lesson20/lesson20.component';
 import { Lesson21Component } from './lesson21/lesson21.component';
 import { Lesson22Component } from './lesson22/lesson22.component';
+import { Lesson23Component } from './lesson23/lesson23.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule, ReactiveFormsModule, LessonRouteModule, MaterialModule],
@@ -58,24 +59,8 @@ import { Lesson22Component } from './lesson22/lesson22.component';
     IndexComponent,
     Lesson20Component,
     Lesson21Component,
-    Lesson22Component
-  ],
-  exports: [
-    Lesson1Component,
-    Lesson2Component,
-    Lesson3Component,
-    Lesson4Component,
-    Lesson0Component,
-    Lesson5Component,
-    Lesson6Component,
-    Lesson7Component,
-    Lesson8Component,
-    Lesson9Component,
-    Lesson10Component,
-    Lesson11Component,
-    InstallComponent,
-    Lesson12Component,
-    Lesson13Component
+    Lesson22Component,
+    Lesson23Component
   ]
 })
 export class LessonsModule { }

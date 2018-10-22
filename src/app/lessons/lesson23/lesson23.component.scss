@@ -1,0 +1,22 @@
+.form{
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+.state {
+    font-size: 0.8rem;
+    padding-left: 0.5rem;
+    position: relative;
+    
+    margin: 1rem 0.25rem;
+    &::before{
+        content: " ";
+        width: 0.2rem;
+        height: 1.5rem;
+        background: #dfdfdf;
+        display: inline-block;
+        top: -3px;
+        left: 0;
+        position: absolute;
+    } 
+}
