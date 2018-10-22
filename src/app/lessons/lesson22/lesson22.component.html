@@ -1,0 +1,22 @@
+<p>
+  lesson 22 :
+</p>
+<p>
+  Basic form from lesson 21 but constructing the simpleForm with <b>FormBuilder</b> service.
+</p>
+<div [formGroup]="simpleForm">
+  <div>
+    <input type="text" formControlName="name" placeholder="name">
+  </div>
+  <div>
+    <input type="text" formControlName="lastName" placeholder="lastName">
+  </div>
+  <div>
+    <input type="text" formControlName="email" placeholder="email">
+  </div>
+  <div>
+    <input type="text" formControlName="address" placeholder="address">
+  </div>
+
+  <div><button (click)="save()">Save</button></div>
+</div>
