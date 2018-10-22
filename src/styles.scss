@@ -61,3 +61,51 @@ code {
     margin-top: 0.5rem;
   }
 }
+
+/*
+ reactive form validation style
+*/
+
+.reactive-form {
+  width: 50%;
+  margin: auto;
+  padding: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 15px -10px rgba(0, 0, 0, 0.25);
+
+  .error-list {
+    padding: 0;
+    padding-left: 0.5rem;
+    li {
+      list-style: none;
+      font-size: 0.8rem;
+      color: #ff4081;
+      text-shadow: 0 2px 5px rgba($color: #ff4081, $alpha: 0.25);
+    }
+  }
+  &,
+  * {
+    box-sizing: border-box;
+    transition: all 0.25s ease-in-out;
+  }
+  input {
+    outline: none;
+    padding: 0.5rem;
+    display: block;
+    width: 100%;
+    border: 1px solid #aaa;
+  }
+  input.ng-invalid.ng-touched {
+    border: 1px solid #a00136;
+    background: #ff4081;
+    box-shadow: 0 4px 10px -1px rgba($color: #9c0839, $alpha: 0.8) inset;
+    color: #fff;
+    &::placeholder {
+      color: #fff;
+    }
+  }
+  button {
+    padding: 0.25rem;
+    margin: 0 0.25rem;
+  }
+}
