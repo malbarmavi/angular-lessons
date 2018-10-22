@@ -13,11 +13,10 @@ cache:
     - node_modules
 
 install:
-  - npm install -g yarn
+  - npm i @angular/cli@6.2.4 -g
 
 script:
-  - yarn lint
-  - yarn build --prod
+  - ng build --prod
 deploy:
   provider: pages
   skip_cleanup: true
