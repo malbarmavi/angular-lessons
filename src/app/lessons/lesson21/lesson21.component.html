@@ -1,0 +1,23 @@
+<p>
+  lesson 21 :
+</p>
+<p>
+  Reactive Forms , basic form with validation controls.
+</p>
+
+<div [formGroup]="simpleForm">
+  <div>
+    <input type="text" formControlName="name" placeholder="name">
+  </div>
+  <div>
+    <input type="text" formControlName="lastName" placeholder="lastName">
+  </div>
+  <div>
+    <input type="text" formControlName="email" placeholder="email">
+  </div>
+  <div>
+    <input type="text" formControlName="address" placeholder="address">
+  </div>
+
+  <div><button (click)="save()">Save</button></div>
+</div>

@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Lesson0Component } from './lesson0/lesson0.component';
 import { Lesson1Component } from './lesson1/lesson1.component';
 import { Lesson2Component } from './lesson2/lesson2.component';
@@ -27,9 +27,10 @@ import { Lesson18Component } from './lesson18/lesson18.component';
 import { Lesson19Component } from './lesson19/lesson19.component';
 import { IndexComponent } from './index/index.component';
 import { Lesson20Component } from './lesson20/lesson20.component';
+import { Lesson21Component } from './lesson21/lesson21.component';
 
 @NgModule({
-  imports: [CommonModule, FormsModule, LessonRouteModule, MaterialModule],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, LessonRouteModule, MaterialModule],
   declarations: [
     Lesson1Component,
     Lesson2Component,
@@ -54,7 +55,8 @@ import { Lesson20Component } from './lesson20/lesson20.component';
     Lesson18Component,
     Lesson19Component,
     IndexComponent,
-    Lesson20Component
+    Lesson20Component,
+    Lesson21Component
   ],
   exports: [
     Lesson1Component,
@@ -74,6 +76,6 @@ import { Lesson20Component } from './lesson20/lesson20.component';
     Lesson13Component
   ]
 })
-export class LessonsModule {}
+export class LessonsModule { }
 
 export { routes as lessonRoutesList } from './lessons.routing';

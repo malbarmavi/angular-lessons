@@ -24,6 +24,7 @@ import { Lesson18Component } from './lesson18/lesson18.component';
 import { Lesson19Component } from './lesson19/lesson19.component';
 import { IndexComponent } from './index/index.component';
 import { Lesson20Component } from './lesson20/lesson20.component';
+import { Lesson21Component } from './lesson21/lesson21.component';
 
 export const routes: Route[] = [
   // {
@@ -140,6 +141,11 @@ export const routes: Route[] = [
     path: 'lesson/20',
     component: Lesson20Component,
     data: { title: 'Lesson 20' }
+  },
+  {
+    path: 'lesson/21',
+    component: Lesson21Component,
+    data: { title: 'Lesson 21' }
   },
   {
     path: 'Resources',
