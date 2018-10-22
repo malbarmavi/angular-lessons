@@ -21,7 +21,7 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: ghtoken
+  github_token: $ghtoken
   local_dir: dist/
   on:
     branch: master
