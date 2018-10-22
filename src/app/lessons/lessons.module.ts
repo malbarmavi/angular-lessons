@@ -31,15 +31,24 @@ import { Lesson21Component } from './lesson21/lesson21.component';
 import { Lesson22Component } from './lesson22/lesson22.component';
 import { Lesson23Component } from './lesson23/lesson23.component';
 import { Lesson24Component } from './lesson24/lesson24.component';
+import { Lesson25Component } from './lesson25/lesson25.component';
+import { Lesson26Component } from './lesson26/lesson26.component';
+import { Lesson27Component } from './lesson27/lesson27.component';
+import { Lesson28Component } from './lesson28/lesson28.component';
+import { Lesson29Component } from './lesson29/lesson29.component';
+import { Lesson30Component } from './lesson30/lesson30.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule, ReactiveFormsModule, LessonRouteModule, MaterialModule],
   declarations: [
+    InstallComponent,
+    IndexComponent,
+    ResourceComponent,
+    Lesson0Component,
     Lesson1Component,
     Lesson2Component,
     Lesson3Component,
     Lesson4Component,
-    Lesson0Component,
     Lesson5Component,
     Lesson6Component,
     Lesson7Component,
@@ -47,22 +56,25 @@ import { Lesson24Component } from './lesson24/lesson24.component';
     Lesson9Component,
     Lesson10Component,
     Lesson11Component,
-    InstallComponent,
     Lesson12Component,
     Lesson13Component,
     Lesson14Component,
-    ResourceComponent,
     Lesson15Component,
     Lesson16Component,
     Lesson17Component,
     Lesson18Component,
     Lesson19Component,
-    IndexComponent,
     Lesson20Component,
     Lesson21Component,
     Lesson22Component,
     Lesson23Component,
-    Lesson24Component
+    Lesson24Component,
+    Lesson25Component,
+    Lesson26Component,
+    Lesson27Component,
+    Lesson28Component,
+    Lesson29Component,
+    Lesson30Component
   ]
 })
 export class LessonsModule { }
