@@ -30,6 +30,7 @@ import { Lesson20Component } from './lesson20/lesson20.component';
 import { Lesson21Component } from './lesson21/lesson21.component';
 import { Lesson22Component } from './lesson22/lesson22.component';
 import { Lesson23Component } from './lesson23/lesson23.component';
+import { Lesson24Component } from './lesson24/lesson24.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule, ReactiveFormsModule, LessonRouteModule, MaterialModule],
@@ -60,7 +61,8 @@ import { Lesson23Component } from './lesson23/lesson23.component';
     Lesson20Component,
     Lesson21Component,
     Lesson22Component,
-    Lesson23Component
+    Lesson23Component,
+    Lesson24Component
   ]
 })
 export class LessonsModule { }
