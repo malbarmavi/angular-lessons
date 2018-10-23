@@ -1,3 +1,89 @@
 <p>
-  lesson27 works!
+  lesson 27 :
 </p>
+<p>
+  Create form array (dynamic form group).
+</p>
+
+
+<div class="reactive-form" [formGroup]="form">
+  <div>
+    <input type="text" formControlName="name" placeholder="name">
+    <div *ngIf="get('name').invalid && (get('name').touched || get('name').dirty )">
+      <ul class="error-list">
+        <li *ngIf="get('name').hasError('required')">this is a required field</li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <input type="text" formControlName="lastName" placeholder="lastName">
+    <div *ngIf="get('lastName').invalid && (get('lastName').touched || get('lastName').dirty )">
+      <ul class="error-list">
+        <li *ngIf="get('lastName').hasError('required')">this is a required field</li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <input type="text" formControlName="email" placeholder="email">
+    <div *ngIf="get('email').invalid && (get('email').touched || get('email').dirty )">
+      <ul class="error-list">
+        <li *ngIf="get('email').hasError('required')">this is a required field</li>
+        <li *ngIf="get('email').hasError('email')">this is email invalid.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="address-section" *ngFor="let formGroup of address.controls;let idx =index; " [formGroup]="formGroup">
+    <div><b>Address</b></div>
+    <div>
+      <input type="text" formControlName="country" placeholder="country">
+      <div *ngIf="formGroup.get('country').invalid && (formGroup.get('country').touched || formGroup.get('country').dirty )">
+        <ul class="error-list">
+          <li *ngIf="formGroup.get('country').hasError('required')">this is a required field</li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <input type="text" formControlName="city" placeholder="city">
+      <div *ngIf="formGroup.get('city').invalid && (formGroup.get('city').touched || formGroup.get('city').dirty)">
+        <ul class="error-list">
+          <li *ngIf="formGroup.get('city').hasError('required')">this is a required field</li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <input type="text" formControlName="street" placeholder="street">
+      <div *ngIf="formGroup.get('street').invalid && (formGroup.get('street').touched || formGroup.get('street').dirty )">
+        <ul class="error-list">
+          <li *ngIf="formGroup.get('street').hasError('required')">this is a required field</li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <input type="text" formControlName="zipCode" placeholder="zipCode" #zipCode>
+      <div *ngIf="formGroup.get('zipCode').invalid && (formGroup.get('zipCode').touched || formGroup.get('zipCode').dirty )">
+        <ul class="error-list">
+          <li *ngIf="formGroup.get('zipCode').hasError('minlength')">ZipCode min length is 4 but current length
+            {{zipCode.value.length}}</li>
+          <li *ngIf="formGroup.get('zipCode').hasError('maxlength')">ZipCode max length is 4 but current length
+            {{zipCode.value.length}}</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div><button (click)="address.removeAt(idx)" *ngIf="address.length > 1">Remove</button></div>
+
+  </div>
+  <div><button (click)="addAddressFormGroup()">Add New Address</button></div>
+
+  <div><button (click)="save()" [disabled]="form.invalid">Save</button> <button (click)="reset()">Reset</button></div>
+</div>
+
+<div *ngIf="selectedValue">
+  <code>
+    <pre>{{selectedValue | json}}</pre>
+  </code>
+</div>
