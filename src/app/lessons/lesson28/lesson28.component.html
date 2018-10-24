@@ -1,3 +1,54 @@
 <p>
-  lesson28 works!
+  lesson 28 :
 </p>
+
+<p>
+  Track the value change of form controls element like select
+</p>
+
+<div class="reactive-form" [formGroup]="form">
+
+  <div>
+    <label>User Type</label>
+    <select formControlName="userType">
+      <option value="user" [selected]="true">User</option>
+      <option value="guest">Guest</option>
+    </select>
+  </div>
+
+  <div>
+    <input type="text" formControlName="name" placeholder="name">
+    <div *ngIf="get('name').invalid && (get('name').touched || get('name').dirty )">
+      <ul class="error-list">
+        <li *ngIf="get('name').hasError('required')">this is a required field</li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <input type="text" formControlName="lastName" placeholder="lastName">
+    <div *ngIf="get('lastName').invalid && (get('lastName').touched || get('lastName').dirty )">
+      <ul class="error-list">
+        <li *ngIf="get('lastName').hasError('required')">this is a required field</li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <input type="text" formControlName="email" placeholder="email">
+    <div *ngIf="get('email').invalid && (get('email').touched || get('email').dirty )">
+      <ul class="error-list">
+        <li *ngIf="get('email').hasError('required')">this is a required field</li>
+        <li *ngIf="get('email').hasError('email')">this is email invalid.</li>
+      </ul>
+    </div>
+  </div>
+  <div>
+  </div>
+
+  <div><button (click)="save()" [disabled]="form.invalid">Save</button> <button (click)="reset()">Reset</button></div>
+</div>
+
+<div *ngIf="selectedValue">
+  <code>
+    <pre>{{selectedValue | json}}</pre>
+  </code>
+</div>
