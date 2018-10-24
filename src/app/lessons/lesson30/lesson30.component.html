@@ -1,3 +1,66 @@
 <p>
-  lesson30 works!
+  lesson 30 :
 </p>
+<p>
+  Angular Pipes
+</p>
+
+<div>
+  <h4>Number Pipe</h4>
+  <div>{{number}}</div>
+  <div>{{number | number}}</div>
+  <div>{{number | number : '0.1-5'}}</div>
+  <div>{{number | number : '5.1-5'}}</div>
+  <div>{{50000 | number : '0.1-5'}}</div>
+
+</div>
+<hr>
+<div>
+  <h4>Upper Case Pipe</h4>
+  {{'hello from angular' | uppercase}}
+</div>
+<hr>
+<div>
+  <h4>Lower Case Pipe</h4>
+  {{'hello from angular' | lowercase}}
+</div>
+<hr>
+<div>
+  <h4>Title Case Pipe</h4>
+  {{'hello from angular' | titlecase}}
+</div>
+
+<hr>
+<div>
+  <h4>Date Pipe</h4>
+  <div>{{currentDate | date}}</div>
+  <div>{{currentDate | date:'long'}}</div>
+  <div>{{currentDate | date:'short'}}</div>
+  <div>{{currentDate | date:'yyy'}}</div>
+  <div>{{currentDate | date:'MM'}}</div>
+  <div>{{currentDate | date:'dd'}}</div>
+  <div>{{currentDate | date:'yyyy/MM/dd'}}</div>
+  <div>{{currentDate | date:'hh:mm:ss a'}}</div>
+  <div>
+    <h4>Pre-defined format</h4>
+    <div *ngFor="let format of dateForms">
+      {{format}} - {{currentDate |date: format}}
+    </div>
+  </div>
+</div>
+
+<hr>
+<div>
+  <h4>Json Pipe</h4>
+  <div>display user without json pipe {{user}}</div>
+  <div>
+    with json pipe {{user | json}}
+  </div>
+
+  <div>
+    <b>with pre html element</b>
+    <pre>{{user | json}}</pre>
+  </div>
+</div>
+
+<a href="https://angular.io/api?type=pipe" target="_blank">angular pipes docs<a>
